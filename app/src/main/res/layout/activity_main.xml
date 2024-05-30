@@ -9,30 +9,19 @@
     android:background="@drawable/image1"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        style="@style/CodeFont"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Android Programming"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <EditText
         android:id="@+id/editTextText"
         android:layout_width="325dp"
         android:layout_height="53dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="256dp"
         android:background="#4DFFFFFF"
         android:ems="10"
         android:hint="Username"
         android:inputType="text"
         android:padding="5dp"
-        android:textSize="20dp"
         android:textColorHint="@color/white"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,10 +35,11 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:padding="5dp"
+        android:textColorHint="@color/white"
         android:textSize="20dp"
         android:visibility="visible"
-        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText" />
 
@@ -62,14 +52,16 @@
         android:src="@drawable/logo1"
         app:layout_constraintBottom_toTopOf="@+id/editTextText"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.757"
         tools:ignore="ContentDescription"
-        tools:layout_editor_absoluteX="148dp" />
+        tools:layout_editor_absoluteX="158dp" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/purple_200"
         android:text="login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -83,6 +75,6 @@
         android:text="Don't have account? Sign up"
         android:textColor="@color/white"
         tools:layout_editor_absoluteX="118dp"
-        tools:layout_editor_absoluteY="379dp" />
+        tools:layout_editor_absoluteY="473dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
